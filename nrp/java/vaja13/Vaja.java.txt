@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Vaja {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+
+    System.out.println("Vpisi neko pozitivno stevilo");
+    String inputStr = scanner.nextLine();
+    scanner.close();
+
+    try {
+      int inputInt = Integer.parseInt(inputStr);
+      if (inputInt > 0) {
+        if (
+          ( Math.floorMod(inputInt, 5) == 0) && 
+          ( Math.floorMod(inputInt, 6) != 0)
+        ) {
+          System.out.println(inputInt + " je deljiv s 5 in ne s 6 - DRZI");
+        } else {
+          System.out.println(inputInt + " je deljiv s 5 in ne s 6 - NE DRZI");
+        }
+      } else {
+        System.out.println("POZITIVNO stevilo!");
+      }
+
+
+    } catch (Exception e) {
+      System.out.println("You were asked for a NUMBER! This ain't it chief...");
+    }
+
+  }
+}

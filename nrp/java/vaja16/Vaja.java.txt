@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Vaja {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+
+    System.out.println("Vpisi X yard-ov, ki jim bom pretvoril v metre ^-^");
+    String input1Str = scanner.nextLine();
+    scanner.close();
+
+    try {
+      int input1Int = Integer.parseInt(input1Str);
+
+      System.out.println(input1Int + " yard-ov je enako " + ( input1Int * 0.9144 ) + " metrov");
+
+
+    } catch (Exception e) {
+      System.out.println("You were asked for a NUMBER!");
+    }
+
+  }
+}

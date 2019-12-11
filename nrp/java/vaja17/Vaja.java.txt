@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Vaja {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+
+    System.out.println("Vpisi poljubno stevilo cevljev...");
+    String input1Str = scanner.nextLine();
+    System.out.println("...in poljubno stevilo palcev, ki jim bom pretvoril v centimetre ^-^");
+    String input2Str = scanner.nextLine();
+    scanner.close();
+
+    try {
+      int input1Int = Integer.parseInt(input1Str);
+      int input2Int = Integer.parseInt(input2Str);
+
+      System.out.println(input1Int + " cevljev in " + input2Int + " palcev je enako " + ( ((input1Int * 12) + input2Int) * 2.54) + " centimetrov");
+
+
+    } catch (Exception e) {
+      System.out.println("You were asked for a NUMBER!");
+    }
+
+  }
+}

@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Vaja {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+
+    System.out.println("Vpisi poljubno letnico, pa da vidimo, ce je to leto prestopno");
+    String input1Str = scanner.nextLine();
+    scanner.close();
+
+    try {
+      int input1Int = Integer.parseInt(input1Str);
+
+      System.out.println(
+        Math.floorMod(input1Int, 4) == 0 &&
+        (
+          Math.floorMod(input1Int, 100) != 0 ||
+          Math.floorMod(input1Int, 400) == 0
+        )
+      );
+
+
+    } catch (Exception e) {
+      System.out.println("You were asked for a NUMBER!");
+    }
+
+  }
+}

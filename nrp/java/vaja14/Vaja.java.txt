@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Vaja {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+
+    System.out.println("Vpisi neko stevilo (lahko je pozitivno, negativno ali 0)");
+    String input1Str = scanner.nextLine();
+    System.out.println("In se eno...");
+    String input2Str = scanner.nextLine();
+    scanner.close();
+
+    try {
+      int input1Int = Integer.parseInt(input1Str);
+      int input2Int = Integer.parseInt(input2Str);
+      
+      if (input1Int > input2Int) System.out.println(input1Int + " > " + input2Int); 
+      if (input1Int < input2Int) System.out.println(input1Int + " < " + input2Int);
+      if (input1Int == input2Int) System.out.println(input1Int + " == " + input2Int);
+
+    } catch (Exception e) {
+      System.out.println("You were asked for a NUMBER!");
+    }
+
+  }
+}

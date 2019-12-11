@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Vaja {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+
+    System.out.println("Vpisi neko stevilo (lahko je pozitivno, negativno ali 0)");
+    String input1Str = scanner.nextLine();
+    System.out.println("Se eno...");
+    String input2Str = scanner.nextLine();
+    System.out.println("In se zadnjo...");
+    String input3Str = scanner.nextLine();
+    scanner.close();
+
+    try {
+      int input1Int = Integer.parseInt(input1Str);
+      int input2Int = Integer.parseInt(input2Str);
+      int input3Int = Integer.parseInt(input3Str);
+
+      int max = 0;
+
+      if (input1Int > max) max = input1Int;
+      if (input2Int > max) max = input2Int;
+      if (input3Int > max) max = input3Int;
+      
+      System.out.println("Od stevil " + input1Int + ", " + input2Int + ", " + input3Int + " je najvecja " + max);
+
+    } catch (Exception e) {
+      System.out.println("You were asked for a NUMBER!");
+    }
+
+  }
+}
