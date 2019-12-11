@@ -1,0 +1,15 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Vaja {
+  public static void main(String[] args) throws IOException {
+    Scanner scanner = new Scanner(System.in);
+
+    System.out.println("Vpisi svoje ime");
+    String inputStr = scanner.nextLine();
+    scanner.close();
+
+    throw new IOException(inputStr);
+
+  }
+}
