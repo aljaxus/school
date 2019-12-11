@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Vaja {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+
+    System.out.println("Enter any number you'd like and I'll tell you how many hundreds' it's hiding inside itself ^-^");
+    String inputStr = scanner.nextLine();
+
+    try {
+      int inputInt = Integer.parseInt(inputStr);
+      double hundreds = Math.floor(inputInt / 100);
+      System.out.println("The number you've given me (be it " + inputInt + ") has " + hundreds + " hundreds");
+    } catch (Exception e) {
+      System.out.println("You were told to enter a number, not letters... I'm leaving )_(");
+    }
+  }
+}

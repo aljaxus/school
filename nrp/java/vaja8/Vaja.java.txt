@@ -1,0 +1,14 @@
+public class Vaja {
+  public static void main(String[] args) {
+    int a = 72;
+    
+    String aStr = a + "";
+    String bStr = "";
+    for (int i = aStr.length() - 1; i >= 0; i--) {
+      bStr += aStr.charAt(i);
+    }
+    System.out.println("aStr = " + aStr);
+    System.out.println("bStr = " + bStr);
+    
+  }
+}

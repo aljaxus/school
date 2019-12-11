@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Vaja {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+
+    System.out.println("Enter any number you'd like and I'll tell you what it's hiding inside itself ^-^");
+    String inputStr = scanner.nextLine();
+    scanner.close();
+
+    try {
+      int inputInt = Integer.parseInt(inputStr);
+      System.out.println("The number you've given me (be it " + inputInt + ") has all of the following:");
+      System.out.println(inputInt / 1000 + " T");
+      System.out.println(inputInt / 100 + " S");
+      System.out.println(inputInt / 10 + " D");
+      System.out.println(inputInt + " E");
+    } catch (Exception e) {
+      System.out.println("You were told to enter a number, not letters... I'm leaving )_(");
+    }
+  }
+}

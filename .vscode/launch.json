@@ -1,0 +1,11 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Prvi",
+      "request": "launch",
+      "mainClass": "Prvi",
+      "projectName": "school_18d4f7b3"
+    }
+  ]
+}
