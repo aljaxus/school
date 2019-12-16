@@ -11,6 +11,9 @@ public class Vaja {
     scanner.close();
 
     try {
+      int input1Int = Integer.parseInt(input1Str);
+      int input2Int = Integer.parseInt(input2Str);
+      
       Double value = (Double.parseDouble(input1Str) * (Double.parseDouble(input2Str) / 100));
 
       System.out.println("Vpisani stevili sta " + input1Str + " (osnova) ter " + input2Str + " (odstotek)");
