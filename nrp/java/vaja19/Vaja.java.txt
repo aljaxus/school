@@ -4,11 +4,11 @@ public class Vaja {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
 
-    System.out.println("Vpsi poljuben polmer kroznice");
+    System.out.println("Vpisi poljuben polmer kroznice");
     String input1Str = scanner.nextLine();
-    System.out.println("Vpsi poljubno A stranico pravokotnika");
+    System.out.println("Vpisi poljubno A stranico pravokotnika");
     String input2Str = scanner.nextLine();
-    System.out.println("Vpsi poljubno B stranico pravokotnika");
+    System.out.println("Vpisi poljubno B stranico pravokotnika");
     String input3Str = scanner.nextLine();
     scanner.close();
 
